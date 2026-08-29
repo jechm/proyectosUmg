@@ -80,7 +80,7 @@ namespace Ejercicio_230826
         {
             if (txtCodigo.Text.Equals("") || txtDescripcion.Text.Equals("") || nudPrecio.Value==0 || cmbCategoria.SelectedItem == null )
             {
-                MessageBox.Show("Asegurese de llenar todos los campos", "Datos Incompletos", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("Asegurese de llenar todos los campos\ny de utilizar valores validos", "Datos Incorrectos", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 return false;
             }
             else

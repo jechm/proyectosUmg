@@ -28,65 +28,97 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            this.pbDado1 = new System.Windows.Forms.PictureBox();
+            this.pbDado2 = new System.Windows.Forms.PictureBox();
+            this.pbDado3 = new System.Windows.Forms.PictureBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.btnJugar = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.pbDado1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbDado2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbDado3)).BeginInit();
             this.SuspendLayout();
             // 
-            // pictureBox1
+            // pbDado1
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(84, 83);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(75, 41);
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
+            this.pbDado1.Image = global::ejercicio300826_progra2.Properties.Resources.dadoL1;
+            this.pbDado1.Location = new System.Drawing.Point(11, 11);
+            this.pbDado1.Margin = new System.Windows.Forms.Padding(2);
+            this.pbDado1.Name = "pbDado1";
+            this.pbDado1.Size = new System.Drawing.Size(139, 133);
+            this.pbDado1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbDado1.TabIndex = 0;
+            this.pbDado1.TabStop = false;
             // 
-            // pictureBox2
+            // pbDado2
             // 
-            this.pictureBox2.Location = new System.Drawing.Point(199, 103);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(75, 41);
-            this.pictureBox2.TabIndex = 1;
-            this.pictureBox2.TabStop = false;
-            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
+            this.pbDado2.Image = global::ejercicio300826_progra2.Properties.Resources.dadoL2;
+            this.pbDado2.Location = new System.Drawing.Point(176, 11);
+            this.pbDado2.Margin = new System.Windows.Forms.Padding(2);
+            this.pbDado2.Name = "pbDado2";
+            this.pbDado2.Size = new System.Drawing.Size(139, 133);
+            this.pbDado2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbDado2.TabIndex = 1;
+            this.pbDado2.TabStop = false;
             // 
-            // pictureBox3
+            // pbDado3
             // 
-            this.pictureBox3.Location = new System.Drawing.Point(298, 93);
-            this.pictureBox3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(75, 41);
-            this.pictureBox3.TabIndex = 2;
-            this.pictureBox3.TabStop = false;
+            this.pbDado3.Image = global::ejercicio300826_progra2.Properties.Resources.dadoL3;
+            this.pbDado3.Location = new System.Drawing.Point(341, 11);
+            this.pbDado3.Margin = new System.Windows.Forms.Padding(2);
+            this.pbDado3.Name = "pbDado3";
+            this.pbDado3.Size = new System.Drawing.Size(139, 133);
+            this.pbDado3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbDado3.TabIndex = 2;
+            this.pbDado3.TabStop = false;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(220, 169);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(35, 13);
+            this.label1.TabIndex = 3;
+            this.label1.Text = "label1";
+            // 
+            // btnJugar
+            // 
+            this.btnJugar.Location = new System.Drawing.Point(11, 193);
+            this.btnJugar.Name = "btnJugar";
+            this.btnJugar.Size = new System.Drawing.Size(469, 40);
+            this.btnJugar.TabIndex = 4;
+            this.btnJugar.Text = "JUGAR";
+            this.btnJugar.UseVisualStyleBackColor = true;
+            this.btnJugar.Click += new System.EventHandler(this.btnJugar_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(600, 366);
-            this.Controls.Add(this.pictureBox3);
-            this.Controls.Add(this.pictureBox2);
-            this.Controls.Add(this.pictureBox1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.ClientSize = new System.Drawing.Size(496, 259);
+            this.Controls.Add(this.btnJugar);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.pbDado3);
+            this.Controls.Add(this.pbDado2);
+            this.Controls.Add(this.pbDado1);
+            this.Location = new System.Drawing.Point(1200, 300);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Form1";
             this.Text = "Form1";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbDado1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbDado2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbDado3)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
 
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.PictureBox pbDado1;
+        private System.Windows.Forms.PictureBox pbDado2;
+        private System.Windows.Forms.PictureBox pbDado3;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button btnJugar;
     }
 }
 

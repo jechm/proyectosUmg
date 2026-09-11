@@ -9,6 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Threading;
 using ejercicio300826_progra2.Models;
+using ejercicio300826_progra2.Properties;
 
 
 namespace ejercicio300826_progra2
@@ -28,55 +29,53 @@ namespace ejercicio300826_progra2
 
         }
 
+        private int valor1 = 0, valor2 = 0, valor3 = 0;
+        private Image[] n = {
+                Resources.dadoL1,
+                Resources.dadoL2,
+                Resources.dadoL3,
+                Resources.dadoL4,
+                Resources.dadoL5,
+                Resources.dadoL6 };
 
-        private void btnJugar_Click(object sender, EventArgs e)
+        private async void btnJugar_Click(object sender, EventArgs e)
         {
-            int valor1=0, valor2 = 0, valor3 = 0;
+            
             
             //pbDado1.f
             clsJuego juego = new clsJuego();
-            if (btnJugar.Text.Equals("JUGAR"))
-            {
+            iniciarAnimacion();
+            juego.Lanzar(ref valor1, ref valor2, ref valor3);
+            Random a = new Random();
+            await Task.Delay(a.Next(100,2000));
+            pbDado1.Image = n[valor1-1];
+            await Task.Delay(a.Next(100, 2000));
+            pbDado2.Image = n[valor2 - 1];
+            await Task.Delay(a.Next(100, 2000));
+            pbDado3.Image = n[valor3 - 1];
 
-                iniciarAnimacion();
-                juego.Lanzar(ref valor1, ref valor2, ref valor3);
-                btnJugar.Text = "DETENER";
+           // await Task.Delay(1000);
+            if (valor1== valor2 && valor2 == valor3)
+            {
+                lblResultado.Text = "JUEGO GANADO";
+                lblResultado.ForeColor = Color.Green;
             }
             else
             {
-                asignarResultados(valor1, valor2, valor3);
-                MessageBox.Show($@"Los valores son:
-dado 1 = {valor1}
-dado 2 = {valor2}
-dado 3 = {valor3}");
-                btnJugar.Text = "JUGAR";
+                lblResultado.Text = "JUEGO PERDIDO";
+                lblResultado.ForeColor= Color.Red;
             }
 
-
         }
 
-        private void asignarResultados(int valor1, int valor2, int valor3)
-        {
-          //  Thread.Sleep(15000);
-            Image[] n = { 
-                Properties.Resources.dadoL1, 
-                Properties.Resources.dadoL2, 
-                Properties.Resources.dadoL3, 
-                Properties.Resources.dadoL4, 
-                Properties.Resources.dadoL5, 
-                Properties.Resources.dadoL6 };
 
 
-            pbDado1.Image = n[valor1];
-            pbDado2.Image = n[valor2];
-            pbDado3.Image = n[valor3];
-        }
-
+        //iniciar animación
         private void iniciarAnimacion()
         {
-            pbDado1.Image = Properties.Resources.animacionDado;
-            pbDado2.Image = Properties.Resources.animacionDado;
-            pbDado3.Image = Properties.Resources.animacionDado;
+            pbDado1.Image = Resources.animacionDado;
+            pbDado2.Image = Resources.animacionDado;
+            pbDado3.Image = Resources.animacionDado;
         }
     }
 }

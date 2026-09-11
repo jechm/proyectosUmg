@@ -27,10 +27,7 @@ namespace ejercicio300826_progra2.Models
             pValor1 = dado1.Generar();
             pValor2 = dado2.Generar();
             pValor3 = dado3.Generar();
-            MessageBox.Show($@"Los valores son:
-dado 1 = {pValor1}
-dado 2 = {pValor2}
-dado 3 = {pValor3}");
+
         }
 
     }

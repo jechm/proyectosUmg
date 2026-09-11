@@ -14,8 +14,7 @@ namespace ejercicio300826_progra2.Models
 
         public int Generar()
         {
-            
-            intValor = aleatorio.Next(1, 6);
+            intValor = aleatorio.Next(1, 7);
             return intValor;
         }
     }

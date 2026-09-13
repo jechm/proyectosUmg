@@ -6,8 +6,10 @@ using System.Windows.Forms;
 
 namespace Ejercicio060926_Progra2
 {
+
     internal static class Program
     {
+
         /// <summary>
         /// Punto de entrada principal para la aplicación.
         /// </summary>

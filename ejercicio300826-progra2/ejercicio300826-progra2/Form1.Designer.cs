@@ -41,10 +41,10 @@
             // pbDado1
             // 
             this.pbDado1.Image = global::ejercicio300826_progra2.Properties.Resources.dadoL1;
-            this.pbDado1.Location = new System.Drawing.Point(15, 14);
-            this.pbDado1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pbDado1.Location = new System.Drawing.Point(11, 11);
+            this.pbDado1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pbDado1.Name = "pbDado1";
-            this.pbDado1.Size = new System.Drawing.Size(185, 164);
+            this.pbDado1.Size = new System.Drawing.Size(139, 133);
             this.pbDado1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pbDado1.TabIndex = 0;
             this.pbDado1.TabStop = false;
@@ -52,10 +52,10 @@
             // pbDado2
             // 
             this.pbDado2.Image = global::ejercicio300826_progra2.Properties.Resources.dadoL2;
-            this.pbDado2.Location = new System.Drawing.Point(235, 14);
-            this.pbDado2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pbDado2.Location = new System.Drawing.Point(176, 11);
+            this.pbDado2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pbDado2.Name = "pbDado2";
-            this.pbDado2.Size = new System.Drawing.Size(185, 164);
+            this.pbDado2.Size = new System.Drawing.Size(139, 133);
             this.pbDado2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pbDado2.TabIndex = 1;
             this.pbDado2.TabStop = false;
@@ -63,10 +63,10 @@
             // pbDado3
             // 
             this.pbDado3.Image = global::ejercicio300826_progra2.Properties.Resources.dadoL3;
-            this.pbDado3.Location = new System.Drawing.Point(455, 14);
-            this.pbDado3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pbDado3.Location = new System.Drawing.Point(341, 11);
+            this.pbDado3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pbDado3.Name = "pbDado3";
-            this.pbDado3.Size = new System.Drawing.Size(185, 164);
+            this.pbDado3.Size = new System.Drawing.Size(139, 133);
             this.pbDado3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pbDado3.TabIndex = 2;
             this.pbDado3.TabStop = false;
@@ -74,19 +74,18 @@
             // lblResultado
             // 
             this.lblResultado.AutoSize = true;
-            this.lblResultado.Location = new System.Drawing.Point(293, 208);
-            this.lblResultado.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblResultado.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblResultado.Location = new System.Drawing.Point(172, 156);
             this.lblResultado.Name = "lblResultado";
-            this.lblResultado.Size = new System.Drawing.Size(90, 16);
+            this.lblResultado.Size = new System.Drawing.Size(133, 24);
             this.lblResultado.TabIndex = 3;
             this.lblResultado.Text = "RESULTADO";
             // 
             // btnJugar
             // 
-            this.btnJugar.Location = new System.Drawing.Point(15, 238);
-            this.btnJugar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnJugar.Location = new System.Drawing.Point(11, 193);
             this.btnJugar.Name = "btnJugar";
-            this.btnJugar.Size = new System.Drawing.Size(625, 49);
+            this.btnJugar.Size = new System.Drawing.Size(469, 40);
             this.btnJugar.TabIndex = 4;
             this.btnJugar.Text = "JUGAR";
             this.btnJugar.UseVisualStyleBackColor = true;
@@ -94,16 +93,16 @@
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(661, 319);
+            this.ClientSize = new System.Drawing.Size(496, 259);
             this.Controls.Add(this.btnJugar);
             this.Controls.Add(this.lblResultado);
             this.Controls.Add(this.pbDado3);
             this.Controls.Add(this.pbDado2);
             this.Controls.Add(this.pbDado1);
             this.Location = new System.Drawing.Point(1200, 300);
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "Form1";
             this.Text = "Form1";
             ((System.ComponentModel.ISupportInitialize)(this.pbDado1)).EndInit();

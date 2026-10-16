@@ -40,7 +40,8 @@ namespace ejercicio300826_progra2
 
         private async void btnJugar_Click(object sender, EventArgs e)
         {
-            
+            lblResultado.Text = "PROCESANDO";
+            lblResultado.ForeColor = System.Drawing.Color.Black;
             
             //pbDado1.f
             clsJuego juego = new clsJuego();

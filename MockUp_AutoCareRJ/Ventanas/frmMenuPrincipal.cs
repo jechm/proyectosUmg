@@ -19,11 +19,13 @@ namespace MockUp_AutoCareRJ.Ventanas
 
         private void btnClientes_Click(object sender, EventArgs e)
         {
-            foreach(Form hijo in this.MdiChildren)
+
+            foreach(Form ventanaHijo in this.MdiChildren)
             {
-                if (hijo is frmClientes)
+                if (ventanaHijo is frmClientes)
                 {
-                    hijo.Activate();
+                    ventanaHijo.Activate();
+
                     return;
                 }
             }

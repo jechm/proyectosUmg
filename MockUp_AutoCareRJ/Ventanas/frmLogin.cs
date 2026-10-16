@@ -50,7 +50,7 @@ namespace MockUp_AutoCareRJ
             iniciarContrasenia();
         }
 
-        //Revisar
+
         private void btnEntrar_Click(object sender, EventArgs e)
         {
             if(txtUsuario.Text == "admin" && txtContrasenia.Text == "admin")
@@ -68,5 +68,6 @@ namespace MockUp_AutoCareRJ
         {
 
         }
+
     }
 }

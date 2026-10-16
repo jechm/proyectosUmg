@@ -66,12 +66,14 @@
     <Compile Include="Ventanas\frmMenuPrincipal.Designer.cs">
       <DependentUpon>frmMenuPrincipal.cs</DependentUpon>
     </Compile>
+
     <Compile Include="Ventanas\nuevoCliente.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Ventanas\nuevoCliente.Designer.cs">
       <DependentUpon>nuevoCliente.cs</DependentUpon>
     </Compile>
+
     <EmbeddedResource Include="Ventanas\frmClientes.resx">
       <DependentUpon>frmClientes.cs</DependentUpon>
     </EmbeddedResource>

@@ -38,14 +38,15 @@ namespace Ejercicio060926_Progra2.Models
         public int Existencias
         {
             get { return intExistencia; }
+            set { intExistencia = value; }
         }
         public int Estado
         {
-            get { return intExistencia; }
+            get { return intEstado; }
         }
 
         //constructor
-        public clsLibro(string pStrCodigo, string pStrTitulo, string pStrAutor, string pStrGenero)
+      /*  public clsLibro(string pStrCodigo, string pStrTitulo, string pStrAutor, string pStrGenero)
         {
             this.strCodigo = pStrCodigo;
             this.strTitulo = pStrTitulo;
@@ -53,16 +54,16 @@ namespace Ejercicio060926_Progra2.Models
             this.strGenero = pStrGenero;
             this.intExistencia = 0;
             this.intEstado = 1;
-        }
+        }*/
 
-        public clsLibro(string pStrCodigo, string pStrTitulo, string pStrAutor, string pStrGenero, int pIntExistencias)
+        public clsLibro(string pStrCodigo, string pStrTitulo, string pStrAutor, string pStrGenero, int pIntExistencias,int pEstado)
         {
             this.strCodigo = pStrCodigo;
             this.strTitulo = pStrTitulo;
             this.strAutor = pStrAutor;
             this.strGenero = pStrGenero;
             this.intExistencia = pIntExistencias;
-            this.intEstado = 1;
+            this.intEstado = pEstado;
         }
 
         public void Actualizar(string pCodigo,string pStrTitulo, string pStrAutor, string pStrGenero, int pIntExistencias, int pIntEstado)

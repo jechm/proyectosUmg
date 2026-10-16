@@ -32,16 +32,37 @@ namespace Ejercicio060926_Progra2.Services
         }
 
         //REcuperar un libro por codigo
-        public clsLibro BuscarLibro(string pCodigo)
+        public clsLibro BuscarLibroPorCodigo(string pCodigo)
         {
             return libros.FirstOrDefault(l => l.Codigo.Equals(pCodigo, StringComparison.OrdinalIgnoreCase));
             //StringComparison.OrdinalIgnoreCase -> es para que sea Case Insensitive
 
         }
 
+        public clsLibro BuscarLibroPorNombre(string pNombre)
+        {
+            return libros.FirstOrDefault(l => l.Titulo.Equals(pNombre, StringComparison.OrdinalIgnoreCase));
+        }
+
+        public IList<clsLibro> BuscarLibroPorAutor(string pAutor)
+
+        {
+            IList<clsLibro> listaEncontrados = new List<clsLibro>();
+            
+            foreach(clsLibro libro in libros)
+            {
+                if(libro.Autor.Equals(pAutor, StringComparison.OrdinalIgnoreCase))
+                {
+                    listaEncontrados.Add(libro);
+                }
+            }
+
+            return listaEncontrados;
+        }
+
         public bool ActualizarLibro(string pCodigo, string pTitulo, string pAutor, string pGenero, int pExistencias, int pEstado)
         {
-            clsLibro libroTemp = BuscarLibro(pCodigo);
+            clsLibro libroTemp = BuscarLibroPorCodigo(pCodigo);
 
             if (libroTemp == null)
             {
@@ -57,7 +78,7 @@ namespace Ejercicio060926_Progra2.Services
         //Delete - Eliminar
         public bool EliminarLibro(string pCodigo)
         {
-            clsLibro libroTemp = BuscarLibro(pCodigo);
+            clsLibro libroTemp = BuscarLibroPorCodigo(pCodigo);
             if(libroTemp == null)
             {
                 return false;
@@ -66,5 +87,34 @@ namespace Ejercicio060926_Progra2.Services
             libros.Remove(libroTemp);
             return true;
         }
+
+
+        //Actualizar Existencias
+        public bool CargarExistencias(string pCodigo, int pExistencias)
+        {
+            clsLibro libroTemp = BuscarLibroPorCodigo(pCodigo);
+            if (libroTemp == null)
+            {
+                return false;
+            }
+            libroTemp.Existencias = pExistencias;
+            return true;
+        }
+
+        public IList<clsLibro> BuscarLibroPorGenero(string pGenero)
+        {
+            IList<clsLibro> listaEncontrados = new List<clsLibro>();
+
+            foreach (clsLibro libro in libros)
+            {
+                if (libro.Genero.Equals(pGenero, StringComparison.OrdinalIgnoreCase))
+                {
+                    listaEncontrados.Add(libro);
+                }
+            }
+
+            return listaEncontrados;
+        }
+
     }
 }
